@@ -76,6 +76,8 @@ new_image = cv2.putText(
 )
 
 # Saving the new image
+cv2.namedWindow("MyImage", cv2.WND_PROP_FULLSCREEN)
+cv2.setWindowProperty("MyImage",cv2.WND_PROP_FULLSCREEN,cv2.WINDOW_FULLSCREEN)
 cv2.imshow("MyImage", image)
 # cv2.imwrite("NewWallpaper.jpg", new_image)
 cv2.waitKey(0)
